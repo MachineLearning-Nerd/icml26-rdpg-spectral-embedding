@@ -1,0 +1,35 @@
+{
+  "c1_delocalization": {
+    "passed": true,
+    "max_entry": 0.25501491331338727,
+    "bound": 0.6516605065462356
+  },
+  "c2_over_spec": {
+    "passed": false,
+    "slope_over": -0.23432028457280815,
+    "slope_correct": -0.23432028457280815
+  },
+  "c3_under_spec": {
+    "passed": true,
+    "slope": -0.1870957785821089,
+    "errors": [
+      0.40388089551087086,
+      0.34661407767126456,
+      0.3116130090597914,
+      0.27159725626975584
+    ]
+  },
+  "c4_ase_bound": {
+    "passed": true,
+    "slope": -0.23478571037113205
+  },
+  "c5_conjecture_binary": {
+    "passed": true,
+    "slope": -0.22272438018045787
+  },
+  "c6_simulations": {
+    "passed": true,
+    "over_larger": true,
+    "under_largest": true
+  }
+}
