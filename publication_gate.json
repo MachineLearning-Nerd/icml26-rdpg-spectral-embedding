@@ -1,8 +1,13 @@
 {
   "paper": "wIMGGV9l1i",
+  "slug": "icml26-rdpg-spectral-embedding",
+  "title": "On the Effect of Misspecifying the Embedding Dimension in Low-rank Network Models",
   "tests_passed": true,
   "publication_gate_passed": true,
   "claims_verified": 5,
   "claims_total": 6,
-  "arxiv": "2601.06014"
+  "arxiv": "2601.06014",
+  "verified_claims": ["c1", "c3", "c4", "c5", "c6"],
+  "not_verified_claims": ["c2"],
+  "scope_note": "C2 fails the included four-size finite slope comparison; this is not treated as a disproof of the paper's asymptotic theorem."
 }
