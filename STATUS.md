@@ -1,9 +1,9 @@
 # Status - icml26-rdpg-spectral-embedding
 
-- **Paper:** On the Effect of Misspecifying the Embedding Dimension in Low-rank Network Models (arXiv 2601.06014, OpenReview wIMGGV9l1i)
+- **Paper:** On the Effect of Misspecifying the Embedding Dimension in Low-rank Network Models ([arXiv 2601.06014v1](https://arxiv.org/abs/2601.06014v1), OpenReview wIMGGV9l1i)
 - **Repository:** `MachineLearning-Nerd/icml26-rdpg-spectral-embedding`
 - **Owner:** MachineLearning-Nerd
-- **State:** DOCUMENTED - local gate reports 5/6 claims verified; C2 is not verified by the included finite slope protocol.
+- **State:** DOCUMENTED - local gate reports 5/6 finite diagnostics passing and 0/6 paper claims independently verified; C2 is not verified by the included finite slope protocol.
 
 ## Claim status
 

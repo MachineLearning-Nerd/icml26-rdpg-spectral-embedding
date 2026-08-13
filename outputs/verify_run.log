@@ -51,5 +51,5 @@ VERDICT SUMMARY
   [PASS] c5_conjecture_binary
   [PASS] c6_simulations
 
-  5/6 claims verified.
+  5/6 finite diagnostics passed; paper claims independently verified: 0/6.
   wrote outputs/verdict.json

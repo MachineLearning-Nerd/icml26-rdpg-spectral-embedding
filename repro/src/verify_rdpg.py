@@ -105,6 +105,6 @@ banner("VERDICT SUMMARY")
 passed = sum(1 for r in results.values() if r.get("passed"))
 for k_, r in results.items():
     print(f"  [{'PASS' if r.get('passed') else 'FAIL'}] {k_}")
-print(f"\n  {passed}/{len(results)} claims verified.")
+print(f"\n  {passed}/{len(results)} finite diagnostics passed; paper claims independently verified: 0/{len(results)}.")
 json.dump(results, open(os.path.join(OUT, "verdict.json"), "w"), indent=2)
 print("  wrote outputs/verdict.json")

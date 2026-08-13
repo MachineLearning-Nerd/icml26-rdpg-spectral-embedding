@@ -15,3 +15,7 @@ The legacy repository contained one branch. The branch was renamed for a clean p
 - `README.md`, `STATUS.md`, `GATE_READY.md`, and this branch audit are present on `main`.
 - Reachable commit author and committer identities are normalized to `MachineLearning-Nerd <37579156+MachineLearning-Nerd@users.noreply.github.com>`.
 - The repository name and active links use `icml26-rdpg-spectral-embedding`.
+
+## Live verification
+
+The final remote audit confirmed repository name `icml26-rdpg-spectral-embedding`, default branch `main`, sole remote branch `main`, canonical paper homepage, README and gate publication, and MachineLearning-Nerd as both author and committer on all reachable commits.

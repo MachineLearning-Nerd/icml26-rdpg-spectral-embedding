@@ -1,6 +1,6 @@
 # ICML 2026 Reproduction: RDPG Spectral Embedding
 
-Independent, claim-by-claim reproduction audit of **[On the Effect of Misspecifying the Embedding Dimension in Low-rank Network Models](https://arxiv.org/abs/2601.06014)** by Roddy Taing and Keith Levin.
+Independent, claim-by-claim evidence audit of **[On the Effect of Misspecifying the Embedding Dimension in Low-rank Network Models](https://arxiv.org/abs/2601.06014v1)** by Roddy Taing and Keith Levin.
 
 This repository studies adjacency spectral embedding (ASE) for a random dot product graph (RDPG) when the embedding dimension is too small, correct, or too large. The included audit is a small NumPy/CPU sanity check. It is not a full proof verification or a paper-scale reproduction.
 
@@ -23,7 +23,7 @@ The paper also reports synthetic experiments supporting these statements. This r
 
 ## Reproduction verdict
 
-The local gate records **5/6 claims verified**. C2 is the one failed finite-simulation check and is intentionally called out below. A failed finite proxy is not by itself a disproof of the paper's theorem, but it means this repository does not support that claim under the included protocol.
+The local gate records **5/6 finite diagnostics passing** and **0/6 paper claims independently verified**. C2 is the one failed finite-simulation check and is intentionally called out below. A failed finite proxy is not by itself a disproof of the paper's theorem, but it means this repository does not support that claim under the included protocol.
 
 | Claim | Paper/reproduction claim | Evidence in this repository | Verdict |
 |---|---|---|---|
