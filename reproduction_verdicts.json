@@ -1,0 +1,37 @@
+{
+  "repository": "MachineLearning-Nerd/icml26-rdpg-spectral-embedding",
+  "paper": "arXiv:2601.06014v1",
+  "audit_status": "INCONCLUSIVE_C1_C3_C4_C5_C6_FINITE_DIAGNOSTICS_VERIFIED_C2_FINITE_CHECK_FAILED_NO_PAPER_CLAIMS_VERIFIED_NO_CURRENT_SCORE",
+  "claims": {
+    "C1": "VERIFIED_FINITE_DIAGNOSTIC",
+    "C2": "FINITE_CHECK_FAILED",
+    "C3": "VERIFIED_FINITE_DIAGNOSTIC",
+    "C4": "VERIFIED_FINITE_DIAGNOSTIC",
+    "C5": "VERIFIED_FINITE_DIAGNOSTIC",
+    "C6": "VERIFIED_FINITE_DIAGNOSTIC"
+  },
+  "evidence": {
+    "finite_diagnostics_verified": 5,
+    "finite_diagnostics_failed": 1,
+    "paper_claims_verified": 0,
+    "claims_total": 6,
+    "points": 10,
+    "points_total": 12,
+    "historical_score": null,
+    "current_score": null,
+    "current_score_claim": false,
+    "publication_allowed": false
+  },
+  "raw_records": {
+    "verification": "outputs/verdict.json",
+    "run_log": "outputs/verify_run.log",
+    "gate": "publication_gate.json"
+  },
+  "limitations": [
+    "C2's finite slope comparison fails and is not treated as theorem falsification",
+    "C1 through C6 are finite diagnostics rather than paper-level proof verification",
+    "C3 uses a first-two-columns target proxy",
+    "C4 and C5 use slope thresholds and limited graph settings",
+    "no current live-judge score is available"
+  ]
+}

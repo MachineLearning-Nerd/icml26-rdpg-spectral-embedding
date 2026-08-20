@@ -1,0 +1,25 @@
+{
+  "manifest_version": 1,
+  "repository": "MachineLearning-Nerd/icml26-rdpg-spectral-embedding",
+  "required_paths": [
+    "README.md",
+    "STATUS.md",
+    "CLAIM_EVIDENCE.md",
+    "SOURCE_AUDIT.md",
+    "ENVIRONMENT.md",
+    "REPORT.md",
+    "AUTHOR_THANK_YOU.md",
+    "CITATION.cff",
+    "branch-audit.md",
+    "claims.json",
+    "reproduction_verdicts.json",
+    "AUTONOMOUS_STATE.json",
+    "publication_gate.json",
+    "GATE_READY.md",
+    "outputs/verdict.json",
+    "outputs/verify_run.log",
+    "repro/src/rdpg.py",
+    "repro/src/verify_rdpg.py",
+    "verify_final.py"
+  ]
+}

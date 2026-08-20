@@ -1,0 +1,79 @@
+{
+  "paper": {
+    "title": "On the Effect of Misspecifying the Embedding Dimension in Low-rank Network Models",
+    "arxiv": "2601.06014",
+    "openreview": "wIMGGV9l1i",
+    "venue": "ICML 2026",
+    "authors": [
+      "Roddy Taing",
+      "Keith Levin"
+    ]
+  },
+  "audit": {
+    "type": "clean_room_finite_diagnostic_audit",
+    "status": "INCONCLUSIVE_C1_C3_C4_C5_C6_FINITE_DIAGNOSTICS_VERIFIED_C2_FINITE_CHECK_FAILED_NO_PAPER_CLAIMS_VERIFIED_NO_CURRENT_SCORE",
+    "finite_diagnostics_passed": 5,
+    "paper_claims_verified": 0,
+    "claims_total": 6,
+    "evidence_points": 10,
+    "evidence_points_total": 12,
+    "current_score_claim": false,
+    "publication_allowed": false
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "paper_anchor": "trailing eigenvector delocalization",
+      "status": "VERIFIED_FINITE_DIAGNOSTIC",
+      "evidence_points": 2,
+      "production_path": "repro/src/verify_rdpg.py::C1 using repro/src/rdpg.py::trailing_eigenvector_delocalization",
+      "result": "maximum trailing entry 0.2550 is below the displayed bound 0.6517 under the local threshold",
+      "scope": "one finite n=200 Bernoulli RDPG instance"
+    },
+    {
+      "id": "C2",
+      "paper_anchor": "slower over-specification rate",
+      "status": "FINITE_CHECK_FAILED",
+      "evidence_points": 0,
+      "production_path": "repro/src/verify_rdpg.py::C2 using over_specification_rate and correct_specification_rate",
+      "result": "over-specification and correct-specification slopes are both -0.2343202846, so the strict comparison fails",
+      "scope": "one seed, four small graph sizes, and one extra embedding dimension; not theorem falsification"
+    },
+    {
+      "id": "C3",
+      "paper_anchor": "under-specification inconsistency",
+      "status": "VERIFIED_FINITE_DIAGNOSTIC",
+      "evidence_points": 2,
+      "production_path": "repro/src/verify_rdpg.py::C3 using rank-3 generation, d=2 ASE, and estimation_error",
+      "result": "finite error slope is -0.1871 and passes the local plateau threshold",
+      "scope": "first-two-columns target proxy for a rank-3 latent matrix"
+    },
+    {
+      "id": "C4",
+      "paper_anchor": "correct-specification ASE rate",
+      "status": "VERIFIED_FINITE_DIAGNOSTIC",
+      "evidence_points": 2,
+      "production_path": "repro/src/verify_rdpg.py::C4 using correct_specification_rate with seed 42",
+      "result": "four-size slope is -0.2348 and passes the local convergence threshold",
+      "scope": "finite rate proxy, not an exact exponent or theorem constant"
+    },
+    {
+      "id": "C5",
+      "paper_anchor": "binary-network extension",
+      "status": "VERIFIED_FINITE_DIAGNOSTIC",
+      "evidence_points": 2,
+      "production_path": "repro/src/verify_rdpg.py::C5 using correct_specification_rate with seed 99",
+      "result": "Bernoulli RDPG slope is -0.2227 and passes the local threshold",
+      "scope": "narrow binary graph diagnostic"
+    },
+    {
+      "id": "C6",
+      "paper_anchor": "finite over/correct/under simulation ordering",
+      "status": "VERIFIED_FINITE_DIAGNOSTIC",
+      "evidence_points": 2,
+      "production_path": "repro/src/verify_rdpg.py::C6 comparing stored finite error arrays",
+      "result": "over-specification is larger than the tolerance-adjusted correct error and under-specification is largest",
+      "scope": "finite simulation ordering, not complete asymptotic reproduction"
+    }
+  ]
+}

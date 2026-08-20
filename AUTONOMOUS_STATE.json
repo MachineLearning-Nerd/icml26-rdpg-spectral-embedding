@@ -1,0 +1,35 @@
+{
+  "state_version": 1,
+  "repository": "MachineLearning-Nerd/icml26-rdpg-spectral-embedding",
+  "paper": "arXiv:2601.06014v1",
+  "status": "INCONCLUSIVE_C1_C3_C4_C5_C6_FINITE_DIAGNOSTICS_VERIFIED_C2_FINITE_CHECK_FAILED_NO_PAPER_CLAIMS_VERIFIED_NO_CURRENT_SCORE",
+  "normalization": {
+    "history_rewritten": true,
+    "canonical_name": "MachineLearning-Nerd",
+    "canonical_email": "MachineLearning-Nerd@users.noreply.github.com",
+    "public_branches": [
+      "main"
+    ],
+    "source_branch_mapping": "master -> main"
+  },
+  "recovery": {
+    "bundle_sha256": "3e03b531bc13549fcdb57b07eadf7725c0d9b6d0347d89aaeb794ab29841ff8a",
+    "pre_normalization_head": "6a71d9e3a1fd759c8f6f04dfd88bd6ca6044c5d1",
+    "storage": "external recovery bundle created before history normalization"
+  },
+  "publication_boundary": {
+    "finite_diagnostics_passed": 5,
+    "finite_diagnostics_failed": 1,
+    "paper_claims_verified": 0,
+    "claims_total": 6,
+    "evidence_points": 10,
+    "evidence_points_total": 12,
+    "current_score_claim": false,
+    "publication_allowed": false
+  },
+  "verification_contract": {
+    "local_verifier": "verify_final.py",
+    "fresh_clone_required": true,
+    "metadata_check_required": true
+  }
+}
